@@ -1,0 +1,5 @@
+language: java
+
+scripts:
+    - mvn compile test-compile
+    - mvn package -Dversion=1.0-${git_branch}-${siggi_project_build_number}
